@@ -1,0 +1,66 @@
+﻿﻿{
+  "port": 80,
+  "restHost": {
+    "apiModules": [
+      {
+        "name": "auth"
+      },
+      {
+        "name": "recipe",
+        "uploadPath": "",
+        "ttl": {
+          "recipeList": 120000,
+          "recipe": 120000
+        }
+      },
+      {
+        "name": "ingredient",
+        "ttl": {
+          "ingredientList": 120000,
+          "ingredient": 120000
+        }
+      },
+      {
+        "name": "user",
+        "uploadPath": "",
+        "ttl": {
+          "userList": 120000,
+          "user": 120000
+        }
+      },
+      {
+        "name": "mealPlan",
+        "ttl": {
+          "mealPlanList": 120000,
+          "mealPlan": 120000
+        }
+      }
+    ],
+    "mongodb": {
+      "connection": ""
+    },
+    "token": {
+      "key": ""
+    },
+    "mail": {
+      "host": "",
+      "secure": "",
+      "auth": {
+        "user": "",
+        "pass": ""
+      }
+    },
+    "mailUrl": {
+      "resetPassword":"",
+      "confirmationEmail": ""
+    },
+    "cache": {
+      "cleanupTimeout": 12000,
+      "scramble": ""
+    }
+  },
+  "angularHost": {
+    "directory": ""
+  },
+  "dataStructure": {}
+}
